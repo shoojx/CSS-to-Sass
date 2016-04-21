@@ -1,0 +1,1 @@
+Boilerplate content should be placed in this folder

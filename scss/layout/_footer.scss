@@ -1,0 +1,62 @@
+#left-footer {
+	float: left;
+	font-weight: bold;
+	margin: 0 0 0 5px;
+	p {
+		@media #{$brk-narrow} { 
+			margin: 20px 0 0 0;
+			font-size: 15px;
+			width: 200px;
+		}
+	}
+}
+
+#right-footer {
+	float: right;
+	display: inline;
+	margin: 0 5px 0 0;
+	@media #{$brk-narrow} {
+		h5 {
+			display: none;
+			//can't use @extend %hidden within media queries by default 
+			//todo: look into http://www.sitepoint.com/cross-media-query-extend-sass/
+		}
+	}
+}
+
+#nav-footer, #nav-footer li {
+	@extend %hidden;
+	@media #{$brk-narrow} {
+		display: inline-block;
+		@include alpha-attribute('background-color', transparent, $white);
+		margin: 15px 10px;
+		font-size: 12px;
+	}
+}
+
+#wrapper-footer {
+	overflow: hidden;
+}
+
+.global-footer {
+	hr {
+		margin: 50px 0 0;
+	}
+	@media #{$brk-narrow} {
+		p {
+			max-width: 80%;
+			margin: 0 10% 20px 10%;
+			font-size: 1.3em;
+		}
+		h5 {
+			margin: 30px 0 20px 0;
+		}
+	}
+	@media #{$brk-wide} {
+		p {
+			max-width: 60%;
+			margin: 0 20% 40px 20%;
+			font-size: 1.3em;
+		}
+	}
+}

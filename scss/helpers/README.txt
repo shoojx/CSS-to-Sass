@@ -1,0 +1,1 @@
+Sass tools, helper files, variables, and config files should go in this folder

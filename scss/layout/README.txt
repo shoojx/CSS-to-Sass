@@ -1,0 +1,1 @@
+Major sections / header / footer / grid / macro layout files should be placed in this folder

@@ -1,0 +1,38 @@
+.header-nav {
+	padding: 0 0 20px;
+	width: 90%;
+	margin: 0 auto;
+	li {
+		margin: 0 0 4px;
+		padding: 10px 0 10px;
+		font-size: 14px;
+	}
+	@media #{$brk-narrow} {
+		ol {
+			margin: 0 0 20px;
+		}
+		li {
+			max-width: 33%;
+			display: inline-block;
+			margin: 0 2.5%;
+			background-color: transparent;
+		}
+	}
+	@media #{$brk-wide} {
+		display: inline;
+		ol {
+			margin: 10px 30px;
+			float: right;
+		}
+		li {
+			margin: 10px 20px;
+		}
+	}
+}
+
+header h2 {
+	@media #{$brk-wide} {
+		float: left;
+		margin: 3% 0px 30px 3%;
+	}
+}

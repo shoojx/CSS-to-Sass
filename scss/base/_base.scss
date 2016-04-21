@@ -1,0 +1,63 @@
+* {
+	font-family: $font-varela-round;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	color: $black;
+	background-color: $dark-gray;
+	margin: 0;
+	@include alpha-attribute('background-color', rgba($black, .2), $white);
+	@media #{$brk-wide} {
+		@include alpha-attribute('background-color', rgba($black, .8), $white);
+	}
+}
+
+ol, li {
+	margin: 0;
+	padding: 0;
+}
+
+ol {
+	list-style: none;
+}
+
+li {
+	@include alpha-attribute('background-color', rgba($white, 1), $white);
+}
+
+a, h5, h6 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+}
+
+h5 {
+	font-size: 14px;
+	padding: 0 0 15px;
+}
+
+h3 {
+	margin: 18.72px 0 12px;
+}
+
+p {
+	font-size: .95em;
+	line-height: 1.5;
+}
+
+img {
+	margin: 20px 0px 5px;
+}
+
+span {
+	font-weight: bold;
+	margin: 0px 6px;
+}
