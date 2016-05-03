@@ -7,3 +7,15 @@
   #{$attribute}: $solid-color;
   #{$attribute}: $color;
 }
+
+@mixin tablet {
+	@media #{$brk-narrow} {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media #{$brk-wide} {
+		@content;
+	}
+}

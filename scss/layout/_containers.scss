@@ -1,6 +1,6 @@
 #about {
 	padding: 0 0 20px;
-	@media #{$brk-narrow} {
+	@include tablet {
 		margin: 0 5% 50px 5%;
 		p {
 			font-size: 1.12em;
@@ -9,7 +9,7 @@
 			max-width: 60%;
 		}
 	}
-	@media #{$brk-wide} {
+	@include desktop {
 		margin: 0 0 3% 3%;
 	}
 }
@@ -17,7 +17,7 @@
 #centerContainer {
 	text-align: center;
 	margin: 0px auto;
-	@media #{$brk-wide} {
+	@include desktop {
 		width: 96%;
 		max-width: 1024px;
 		@include alpha-attribute('background-color', rgba($white, .7), $white);
@@ -31,24 +31,24 @@
 
 .logo {
 	max-width: 70%;
-	@media #{$brk-narrow} {
+	@include tablet {
 		float: right;
 		margin: 0 auto;
 		max-width: 42%;
 	}
-	@media #{$brk-wide} {
+	@include desktop {
 		margin: 0 3%;
 	}
 }
 
 .img {
-	@media #{$brk-narrow} {
+	@include tablet {
 		max-width: 48%;
 		display: inline-block;
 		vertical-align: top;
 		margin: 0 0 1% 0;
 	}
-	@media #{$brk-wide} {
+	@include desktop {
 		width: 32%;
 		border: 0;
 		p {

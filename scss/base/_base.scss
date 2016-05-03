@@ -11,7 +11,7 @@ body {
 	background-color: $dark-gray;
 	margin: 0;
 	@include alpha-attribute('background-color', rgba($black, .2), $white);
-	@media #{$brk-wide} {
+	@include desktop {
 		@include alpha-attribute('background-color', rgba($black, .8), $white);
 	}
 }
