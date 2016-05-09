@@ -1,3 +1,15 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+#nav-footer, #nav-footer li {
+  display: none; }
+
+body, ol, li {
+  padding: 0;
+  margin: 0; }
+
 * {
   font-family: "Varela Round", sans-serif; }
 
@@ -7,17 +19,12 @@ html {
 body {
   color: #000;
   background-color: #A9A9A9;
-  margin: 0;
   background-color: #cccccc;
   background-color: rgba(0, 0, 0, 0.2); }
   @media (min-width: 1024px) {
     body {
       background-color: #333333;
       background-color: rgba(0, 0, 0, 0.8); } }
-
-ol, li {
-  margin: 0;
-  padding: 0; }
 
 ol {
   list-style: none; }
@@ -53,14 +60,6 @@ span {
   margin: 0px 6px; }
 
 /* Web Fonts */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-#nav-footer, #nav-footer li {
-  display: none; }
-
 #about {
   padding: 0 0 20px; }
   @media (min-width: 768px) {
@@ -77,7 +76,7 @@ span {
 
 #centerContainer {
   text-align: center;
-  margin: 0px auto; }
+  margin: 0 auto; }
   @media (min-width: 1024px) {
     #centerContainer {
       width: 96%;

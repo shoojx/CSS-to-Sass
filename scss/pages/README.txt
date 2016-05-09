@@ -1,1 +1,0 @@
-Styles specific to particular pages should be placed in this folder

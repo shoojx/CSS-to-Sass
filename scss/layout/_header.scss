@@ -5,9 +5,9 @@
 	li {
 		margin: 0 0 4px;
 		padding: 10px 0 10px;
-		font-size: 14px;
+		font-size: $font-list;
 	}
-	@media #{$brk-narrow} {
+	@include tablet {
 		ol {
 			margin: 0 0 20px;
 		}
@@ -15,10 +15,10 @@
 			max-width: 33%;
 			display: inline-block;
 			margin: 0 2.5%;
-			background-color: transparent;
+			background-color: $transparent;
 		}
 	}
-	@media #{$brk-wide} {
+	@include desktop {
 		display: inline;
 		ol {
 			margin: 10px 30px;
@@ -31,7 +31,7 @@
 }
 
 header h2 {
-	@media #{$brk-wide} {
+	@include desktop {
 		float: left;
 		margin: 3% 0px 30px 3%;
 	}

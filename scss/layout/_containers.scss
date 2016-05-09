@@ -3,7 +3,7 @@
 	@include tablet {
 		margin: 0 5% 50px 5%;
 		p {
-			font-size: 1.12em;
+			font-size: $font-paragraph-small;
 			text-align: left;
 			margin: 0 15px 0 0;
 			max-width: 60%;
@@ -16,17 +16,17 @@
 
 #centerContainer {
 	text-align: center;
-	margin: 0px auto;
+	margin: 0 auto;
 	@include desktop {
 		width: 96%;
 		max-width: 1024px;
-		@include alpha-attribute('background-color', rgba($white, .7), $white);
+		@include alpha-attribute('background-color', rgba($primary-color, .7), $white);
 	}
 }
 
 #portfolio {
 	padding: 20px 0;
-	@include alpha-attribute('background-color', rgba($white, .5), $white);
+	@include alpha-attribute('background-color', rgba($primary-color, .5), $white);
 }
 
 .logo {
@@ -52,7 +52,7 @@
 		width: 32%;
 		border: 0;
 		p {
-			font-size: .95em;
+			font-size: $font-paragraph-small;
 		}
 	}
 }

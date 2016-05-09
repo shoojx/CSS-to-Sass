@@ -1,1 +1,0 @@
-Project specific theme based styles should go in this folder

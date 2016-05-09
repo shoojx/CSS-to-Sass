@@ -7,18 +7,17 @@ html {
 }
 
 body {
-	color: $black;
-	background-color: $dark-gray;
-	margin: 0;
-	@include alpha-attribute('background-color', rgba($black, .2), $white);
+	color: $tertiary-color;
+	background-color: $secondary-color;
+	@extend %reset;
+	@include alpha-attribute('background-color', rgba($tertiary-color, .2), $white);
 	@include desktop {
-		@include alpha-attribute('background-color', rgba($black, .8), $white);
+		@include alpha-attribute('background-color', rgba($tertiary-color, .8), $white);
 	}
 }
 
 ol, li {
-	margin: 0;
-	padding: 0;
+	@extend %reset;
 }
 
 ol {
@@ -26,7 +25,7 @@ ol {
 }
 
 li {
-	@include alpha-attribute('background-color', rgba($white, 1), $white);
+	@include alpha-attribute('background-color', rgba($primary-color, 1), $white);
 }
 
 a, h5, h6 {
@@ -40,7 +39,7 @@ a {
 }
 
 h5 {
-	font-size: 14px;
+	font-size: $font-header;
 	padding: 0 0 15px;
 }
 
@@ -49,7 +48,7 @@ h3 {
 }
 
 p {
-	font-size: .95em;
+	font-size: $font-paragraph-small;
 	line-height: 1.5;
 }
 

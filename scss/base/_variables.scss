@@ -4,6 +4,10 @@ $black : #000;
 $dark-gray : #A9A9A9;
 
 // Functional Colors
+$primary-color : $white;
+$secondary-color : $dark-gray;
+$tertiary-color : $black;
+$transparent : transparent;
 
 // Fonts
 $font-varela-round : 'Varela Round', sans-serif;
@@ -11,7 +15,11 @@ $font-varela-round : 'Varela Round', sans-serif;
 // Font Sizes
 $font-large: 24px;
 $font-small: 12px;
-$font-general: 16px;
+$font-general: 15px;
+$font-header: 14px;
+$font-list: 14px;
+$font-paragraph-large: 1.3em;
+$font-paragraph-small: .95em;
 
 // Paths
 $path-font : '../../fonts'; 
